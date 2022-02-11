@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>哔哩哔哩专栏抓取</title>
+</head>
+<body>
+当前专栏一共有 {{num}} 篇文章<br>
+提取区间
+<form action="/column/f" method="get">
+    <input type="number" max="{{num}}" min="1" name="min" value="1">
+    <input type="number" max="{{num}}" min="1" name="max" value="{{num}}"><br>
+    <input type="submit" value="抓取专栏文章">
+</form>
+</body>
+</html>

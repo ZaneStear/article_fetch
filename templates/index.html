@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>抓取文章</title>
+</head>
+<body>
+<form action="/fetch" method="get">
+    <table>
+        <tr>
+            <td>输入文章链接：<input type="text" name="url"></td>
+        </tr>
+        <tr>
+            <td>
+                抓取网站：<br>
+                <input type="radio" name="web" value="tieba" checked="checked"> 百度贴吧<br>
+                <input type="radio" name="web" value="bili"> 哔哩哔哩<br>
+                <input type="radio" name="web" value="column"> 哔哩哔哩专栏文集<br>
+            </td>
+        </tr>
+    </table>
+    <input type="submit" value="抓取帖子">
+</form>
+</body>
+</html>
